@@ -1,0 +1,52 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.mavenproject7;
+import java.util.Scanner;
+
+/**
+ *
+ * @author meteo
+ */
+public class Mavenproject7 {
+
+    public static void main(String[] args) {
+        
+        double b=180.0;
+        double ym;
+        double cm;
+        double p=b;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("çekilecek miktar");
+        cm=reader.nextDouble();
+        System.out.println("yüklenecek miktar");
+        ym=reader.nextDouble();
+        if(cm==0){
+            p=b+ym;
+            
+            
+        }
+        else if(ym==0){
+            p=b-cm;
+        }
+        
+        else{
+            System.out.println("Lütfen tek işlem yapınız");
+        }
+        System.out.println("paraniz="+p);
+                
+    if(cm>b){
+            System.out.println("YETERSİZ BAKİYE");
+        }
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+}
